@@ -86,7 +86,6 @@
     {\LARGE Ehsan Koohestani} \\ \vspace{0pt}
     \begin{multicols}{2}
     \begin{flushleft}
-    \large{73 Harmonia Cres} \\
     \large{Woodbridge, Ontario, Canada, L4L 3Y2} \\
     \end{flushleft}
     
@@ -109,16 +108,16 @@
         {Advanced Micro Devices (AMD) - Platform Security Processor (PSP) team}{Markham, Ontario, Canada}
       \resumeItemListStart
         \small
-\resumeItem{Led migration and developed firmware to re-architect BootROM, Bootloader, and Trusted OS to support RISC-V ISA, in addition to ARM A5 ISA.}
+\resumeItem{Led migration and developed firmware to re-architect BootROM, Bootloader, and TEE OS (AMD Runtime OS) to support RISC-V ISA, in addition to ARM A5 ISA.}
 \resumeItem{Proposed and implemented architectural enhancement for lower layers of the TEE OS to optimize the use of RISC-V core features (such as thread scheduling, MMU, cache management, interrupts/exceptions, etc.).}
 \resumeItem{Implemented a dGPU Bootloader boot flow that supports new features with minimal maintenance and overhead in collaboration with PSP internal and external team.}
 \resumeItem{Devised and implemented an innovative debugging and benchmarking method for AMD Secure Processor known as Secure Trace Log.}
-\resumeItem{Formulated a comprehensive system-level proposal and integrated Device Identifier Composition Engine (DICE) layering architecture for SPDM applications. This initiative covers BootROM, Bootloader and Trusted OS implementations. Materialized the proposal in a Server product that covers FW/ HW implementations and a successful end-to-end automated validations for both Provisioning mode and mission mode.}
-\resumeItem{Designed architecture and led an implementation team for DICE Protection Environment (DPE) for modern generation of Server products based on TCG iROT Profile. The architecture impacts AMD RoT as well as AMD Security Processor and x86 driver}
-\resumeItem{Scaled Caliptra DPE (TCG reference code) implementation from Rust code into C with a wrapper. Validated all DPE commands based on AMD use-cases and flagged many improvements for the Caliptra WG}
-\resumeItem{Initiated Rust code transition in AMD TEE by design and implementing a Trusted Application for DPE with minimum overhead. It involves full functionality of driver which cohabited with C code, interoperability with Kernal/ OS and other TAs and bench-marking (code size, stack/ heap usage, performance, etc) }
-\resumeItem{Threat modeling and analyzed few critical features that require X.509 certificate as remote/ local identifications (link encryption, multi-client DPE services, etc). Ultimately, provided proposal to improve the security level of Server and GPU products by mitigating vulnerabilities}
-\resumeItem{Integrated FWs to use AMD Crypto engine based on TEE APIs for EC-DSA, EC-DH, RSA-PSS, AES GCM, etc operations for SPDM Open Source project. Designed and implemented creative test units with and without Hyperprovisor donated memory for SEV-SNP use-case.}
+\resumeItem{Formulated a comprehensive system-level proposal and integrated Device Identifier Composition Engine (DICE) layering architecture for SPDM applications. This initiative covers BootROM, Bootloader and TEE OS implementations. Materialized the proposal in a Server product that covers FW/ HW implementations and a successful end-to-end automated validations for both Provisioning mode and mission mode.}
+\resumeItem{Designed architecture and led an implementation team for DICE Protection Environment (DPE) for modern generation of Server products based on TCG iROT Profile. The architecture impacts AMD RoT as well as AMD Security Processor and x86 driver.}
+\resumeItem{Scaled Caliptra DPE (TCG reference code) implementation from Rust code into C with a wrapper. Designed test cases, validated DPE commands based on AMD use-cases and reported many bugs/ improvements to the Caliptra WG.}
+\resumeItem{Initiated Rust code transition in AMD TEE by design and implementing a Trusted Application for DPE with minimum overhead. It involves full functionality of driver which cohabited with C code, interoperability with Kernel/ OS and other TAs and bench-marking (code size, stack/ heap usage, performance, etc). Teamed up Rust Committee and delegated other Rust-based TAs to new owners.}
+\resumeItem{Threat modeling and analyzed few critical features that require X.509 certificate as remote/ local identifications (link encryption, multi-client DPE services, etc). Ultimately, provided proposal to improve the security level of Server and GPU products by mitigating vulnerabilities.}
+\resumeItem{Integrated FWs to use AMD Crypto engine based on TEE APIs for EC-DSA, EC-DH, RSA-PSS, AES-GCM, etc operations for SPDM Open Source project. Designed and implemented creative test units with and without Hyperprovisor donated memory for SEV-SNP use-case.}
 \resumeItem{Customized an AMD X.509 parser for SPDM requirements. Hands on RFC specifications for X.509 standard.}
 \resumeItem{Represented the PSP team during the pre-silicon phase of successful programs such as Vega20, Mi100, Mi200, Mi300, Turin, Venice and contributed to their bring-up.}
 \resumeItem{Created and implemented a secure register whitelist mechanism to be accessed by an x86 driver via RAS (Reliability, Availability, and Serviceability) Trusted Application.}
@@ -129,7 +128,7 @@
 \resumeItem{Created Python scripts to increase the team throughput in using GDB to simplify debugging of RISC-V/ARM MMU blocks.}
 \resumeItem{Published internal secure coding guidelines and code styles. Actively engaged in conducting an internal system-level security audit of FW stacks and recommended techniques for optimizing FW footprint vs. performance.}
 \resumeItem{Mentored numerous newly hired engineers ranged from Co-ops to Principal Member of Technical Staff. Acted as one of the first points of contact for the security FW team to provide AMD internal consultations.}
-\resumeItem{Contributed in TCG WG spec at \url{https://github.com/TrustedComputingGroup/Server-Internal/}}
+\resumeItem{Contributed in TCG WG spec at \url{https://github.com/TrustedComputingGroup/Server-Internal/}.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -138,15 +137,15 @@
 
 \resumeSubheading
         {System and Hardware Engineer/ Team Lead}{Feb, 2015 -- Oct, 2018}
-        {Onsemi (ON Semiconductor)}{Wateloo, Ontario, Canada}
+        {Onsemi (ON Semiconductor)}{Waterloo, Ontario, Canada}
       \resumeItemListStart
         \small
-\resumeItem{Contributed as part of a multi-disciplinary team in the design of a Bluetooth Low-Energy IC for IoT and hearing aid applications}
-\resumeItem{Implemented the audio path for a proprietary protocol between two ICs, utilizing an ASRC engine and an auto-correction/compression algorithm to achieve the required level of quality}
-\resumeItem{Co-designed and implemented the audio path for a chip with MFi communication capability, including left/right audio synchronization for hearing aids and techniques to reduce artifact effects}
-\resumeItem{Served as team lead in designing and implementing sample codes for BLE, audio path, and ports for a new chip}
-\resumeItem{Created test plans for verification of several interfaces, including UART, I2C, SPI, PCM, PWM, DMA, and audio engines such as Asynchronous Sample Rate Converter and synchronizer, on ARM-CM3, DSP co-processor, and during pre/post tape-out}
-\resumeItem{Designed and co-implemented an automated, instrumented testing mechanism to control embedded software and measurement tools using Python, GDB, and JLink}
+\resumeItem{Contributed as a system level designer of a multi-disciplinary team in the design of a Bluetooth Low-Energy IC for IoT and hearing aid applications.}
+\resumeItem{Implemented the audio path for a proprietary protocol between two ICs, utilizing an ASRC engine and an auto-correction/compression algorithm to achieve the required level of quality.}
+\resumeItem{Designed and implemented the audio path for a chip with MFi communication capability, including left/right audio synchronization for hearing aids and techniques to reduce artifact effects.}
+\resumeItem{Served as team lead in designing and implementing sample codes for BLE, audio path, and ports for a new chip.}
+\resumeItem{Created test plans for verification of several interfaces, including UART, I2C, SPI, PCM, PWM, DMA, and audio engines such as Asynchronous Sample Rate Converter and synchronizer, on ARM-CM3, DSP co-processor, and during pre/post tape-out.}
+\resumeItem{Designed and co-implemented an automated, instrumented testing mechanism to control embedded software and measurement tools using Python, GDB, and JLink.}
 \resumeItem{Led the RSL10 Firmware team for over a year, mentoring new engineers and co-ops, and providing direct engineering consultation and training to customers.}
     \resumeItemListEnd
 
@@ -156,7 +155,7 @@
 
 \resumeSubheading
         {Embedded System Developer}{Mar, 2014 -- Feb, 2015}
-        {CST LAB University of Waterloo}{Wateloo, Ontario, Canada}
+        {CST LAB University of Waterloo}{Waterloo, Ontario, Canada}
       \resumeItemListStart
         \small
 \resumeItem{Contributed to a team to implement a novel wireless protocol based on Full-Duplex principles.}
@@ -216,10 +215,6 @@
        \resumeSubheading
         {NCC Group}{2018}
         {Secure Coding in C and C++}{Markham, Ontario, Canada}
-       \resumeSubheading
-        {Engineers Australia}{2009}
-        {Assessed as Professional Engineer}{}
-
 
 \resumeSubHeadingListEnd
 
@@ -232,7 +227,10 @@
     {AMD}{Q2 2022}
     \resumeSubheading
     {Spotlight Award}{Distinguished among Security team members}
-    {AMD}{2019 (1 time), 2020 (1 time), 2021 (3 times), 2023 (2 times), 2024 (2 times)}
+    {AMD}{2019 (1 time), 2020 (1 time), 2021 (3 times), 2023 (2 times), 2024 (3 times)}
+    \resumeSubheading
+    {Selected Main Presenter}{Annual Canada Innovation Showcase}
+    {AMD}{2019, 2023, 2024}
     \resumeSubheading
     {Outstanding Performance Recognition}{RSL10/ E7150SL contribution}
     {Onsemi}{2018}
